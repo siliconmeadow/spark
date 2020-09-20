@@ -1,14 +1,14 @@
 user:
-    name: pigmonkey
+    name: rsheppard
     uid: 1000
-    group: pigmonkey
+    group: rsheppard
     shell: /usr/bin/zsh
-    email:  peter@havenaut.net
+    email:  richard@siliconmeadow.net
     log:
         dir: log
         rotate: 8
 
-hostname: nous
+hostname: monsieur-poupik
 
 dotfiles:
     url: git@github.com:pigmonkey/dotfiles.git
@@ -89,6 +89,7 @@ base_packages:
     - termdown
     - fzf
     - cpulimit
+    - nano
 
 filesystem_packages:
     - dosfstools
@@ -122,7 +123,7 @@ bitlbee:
     run_on: trusted
     torify: True
 
-bootloader: grub
+bootloader: refind
 
 postgresql:
     enable: True
